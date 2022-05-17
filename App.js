@@ -31,9 +31,6 @@ export default function App() {
     }
   };
 
-  console.log("conteudo do product", product);
-  console.log("conteudo da lista", listProduct);
-
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -63,7 +60,7 @@ export default function App() {
         />
 
         <Button title="Cadastrar Produto" onPress={handleAddProduct} />
-        <ProductList listProduct={listProduct} />
+        <ProductList listProduct={listProduct} setProduct={setProduct} />
       </View>
     </ScrollView>
   );
